@@ -29,7 +29,7 @@ This project automates test cases for the **Parabank demo banking site** using *
 - **TestNG**
 - **Maven**
 - **ChromeDriver**
-- (Optional) **Allure / Extent Reports**
+- **Allure / Extent Reports**
 
 ---
 
