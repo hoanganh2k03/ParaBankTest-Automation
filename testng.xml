@@ -1,0 +1,17 @@
+<suite name="Parabank Test Suite" parallel="false">
+
+    <test name="Parabank Tests">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.OpenNewAccountTest"/>
+            <class name="tests.AccountOverviewTest"/>
+            <class name="tests.AccountDetailTest"/>
+            <class name="tests.TransferFundsTest"/>
+            <class name="tests.PayBillTest"/>
+            <class name="tests.FindTransactionsTest"/>
+            <class name="tests.UpdateContactInfoTest"/>
+            <class name="tests.RequestLoanTest"/>
+        </classes>
+    </test>
+
+</suite>
