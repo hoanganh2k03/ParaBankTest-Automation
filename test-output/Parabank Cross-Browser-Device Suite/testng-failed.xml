@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="tests" name="Failed suite [Parabank Cross-Browser-Device Suite]">
+  <test thread-count="6" parallel="tests" name="Desktop Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="device" value="desktop"/>
+    <classes>
+      <class name="tests.ui.TransferFundsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testTransferFunds"/>
+        </methods>
+      </class> <!-- tests.ui.TransferFundsTest -->
+      <class name="tests.ui.FindTransactionsTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testFindByDate"/>
+          <include name="testFindByTransactionId"/>
+        </methods>
+      </class> <!-- tests.ui.FindTransactionsTest -->
+      <class name="tests.ui.RequestLoanTest">
+        <methods>
+          <include name="testRequestLoanSuccess"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.ui.RequestLoanTest -->
+      <class name="tests.ui.PayBillTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="testPayBill"/>
+        </methods>
+      </class> <!-- tests.ui.PayBillTest -->
+    </classes>
+  </test> <!-- Desktop Chrome(failed) -->
+</suite> <!-- Failed suite [Parabank Cross-Browser-Device Suite] -->

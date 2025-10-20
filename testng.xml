@@ -1,17 +1,108 @@
-<suite name="Parabank Test Suite" parallel="false">
+<suite name="Parabank Cross-Browser-Device Suite" parallel="tests" thread-count="6">
 
-    <test name="Parabank Tests">
+    <!-- 🌐 DESKTOP CHROME -->
+    <test name="Desktop Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="device" value="desktop"/>
         <classes>
-            <class name="tests.LoginTest"/>
-            <class name="tests.OpenNewAccountTest"/>
-            <class name="tests.AccountOverviewTest"/>
-            <class name="tests.AccountDetailTest"/>
-            <class name="tests.TransferFundsTest"/>
-            <class name="tests.PayBillTest"/>
-            <class name="tests.FindTransactionsTest"/>
-            <class name="tests.UpdateContactInfoTest"/>
-            <class name="tests.RequestLoanTest"/>
+        <!--  
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.OpenNewAccountTest"/>
+            <class name="tests.ui.AccountOverviewTest"/>
+            -->
+            <class name="tests.ui.AccountDetailTest"/>
+            <class name="tests.ui.TransferFundsTest"/>
+            <class name="tests.ui.PayBillTest"/>
+            <class name="tests.ui.FindTransactionsTest"/>
+            <class name="tests.ui.UpdateContactInfoTest"/>
+            <class name="tests.ui.RequestLoanTest"/>
+           
+        </classes>
+    </test>
+<!--  
+
+    <test name="Desktop Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="device" value="desktop"/>
+        <classes>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.OpenNewAccountTest"/>
+            <class name="tests.ui.AccountOverviewTest"/>
+            <class name="tests.ui.AccountDetailTest"/>
+            <class name="tests.ui.TransferFundsTest"/>
+            <class name="tests.ui.PayBillTest"/>
+            <class name="tests.ui.FindTransactionsTest"/>
+            <class name="tests.ui.UpdateContactInfoTest"/>
+            <class name="tests.ui.RequestLoanTest"/>
         </classes>
     </test>
 
+
+    <test name="Desktop Edge">
+        <parameter name="browser" value="edge"/>
+        <parameter name="device" value="desktop"/>
+        <classes>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.OpenNewAccountTest"/>
+            <class name="tests.ui.AccountOverviewTest"/>
+            <class name="tests.ui.AccountDetailTest"/>
+            <class name="tests.ui.TransferFundsTest"/>
+            <class name="tests.ui.PayBillTest"/>
+            <class name="tests.ui.FindTransactionsTest"/>
+            <class name="tests.ui.UpdateContactInfoTest"/>
+            <class name="tests.ui.RequestLoanTest"/>
+        </classes>
+    </test>
+
+
+    <test name="Mobile Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="device" value="mobile"/>
+        <classes>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.OpenNewAccountTest"/>
+            <class name="tests.ui.AccountOverviewTest"/>
+            <class name="tests.ui.AccountDetailTest"/>
+            <class name="tests.ui.TransferFundsTest"/>
+            <class name="tests.ui.PayBillTest"/>
+            <class name="tests.ui.FindTransactionsTest"/>
+            <class name="tests.ui.UpdateContactInfoTest"/>
+            <class name="tests.ui.RequestLoanTest"/>
+        </classes>
+    </test>
+
+
+    <test name="Mobile Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="device" value="mobile"/>
+        <classes>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.OpenNewAccountTest"/>
+            <class name="tests.ui.AccountOverviewTest"/>
+            <class name="tests.ui.AccountDetailTest"/>
+            <class name="tests.ui.TransferFundsTest"/>
+            <class name="tests.ui.PayBillTest"/>
+            <class name="tests.ui.FindTransactionsTest"/>
+            <class name="tests.ui.UpdateContactInfoTest"/>
+            <class name="tests.ui.RequestLoanTest"/>
+        </classes>
+    </test>
+
+
+    <test name="Mobile Edge">
+        <parameter name="browser" value="edge"/>
+        <parameter name="device" value="mobile"/>
+        <classes>
+            <class name="tests.ui.LoginTest"/>
+            <class name="tests.ui.OpenNewAccountTest"/>
+            <class name="tests.ui.AccountOverviewTest"/>
+            <class name="tests.ui.AccountDetailTest"/>
+            <class name="tests.ui.TransferFundsTest"/>
+            <class name="tests.ui.PayBillTest"/>
+            <class name="tests.ui.FindTransactionsTest"/>
+            <class name="tests.ui.UpdateContactInfoTest"/>
+            <class name="tests.ui.RequestLoanTest"/>
+        </classes>
+    </test>
+-->
 </suite>
